@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+  color: gray;
+  min-height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 500px;
+  background-color: #fff;
+}
+
+.inner-text {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.inner-text > * + * {
+  margin-top: 10px;
+}
+
+.inner-text p {
+  font-size: 14px;
+}
+
+.parfum {
+  max-width: 50%;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  color: black;
+}
+
+.subtitle {
+  letter-spacing: 2.5px;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 12px;
+  background: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btn img {
+  margin-right: 8px;
+}
+
+.price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.price::after {
+  content: "$169.99";
+  color: gray;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
